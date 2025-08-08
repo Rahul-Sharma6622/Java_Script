@@ -1,0 +1,19 @@
+/* body {
+    background-color: aqua;
+    font-style: italic;
+}
+
+h1 {
+    color: rgb(3, 114, 49);
+   
+} */
+
+.box{
+    height: 50px;
+    width: 200px;
+    border: 1px solid black;
+    margin: 5px;
+    background-color: rgb(10, 133, 182);
+    text-align: center;
+    color: white;
+}
