@@ -1,0 +1,17 @@
+/* #box{
+    height: 200px;
+    width: 100px;
+    background-color: aqua;
+    border: 1px solid black;
+    text-align: center;
+
+} */
+
+.mypara{
+    background-color: aquamarine;
+    color: rgb(228, 9, 9);
+}
+
+.newclass{
+    background-color: rgb(8, 236, 111);
+}
