@@ -56,8 +56,11 @@ h1{
     display: inline;
     padding: 5px;
     border-radius: 1rem;
-
 }
 .msg-container{
     margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }

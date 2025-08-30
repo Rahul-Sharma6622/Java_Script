@@ -1,0 +1,214 @@
+1. JavaScript Basics
+
+What is JavaScript?
+JavaScript ek programming language hai jo web pages ko interactive banata hai.
+
+Browser me run hoti hai, lekin Node.js ke through server pe bhi chalti hai.
+
+javascript
+Copy
+Edit
+console.log("Hello World!");
+2. Variables
+Variables data store karte hain.
+
+javascript
+Copy
+Edit
+var name = "Rahul"; // Old way
+let age = 22;       // Modern way
+const PI = 3.14;    // Constant
+Difference:
+
+var → function scope, old style
+
+let → block scope, modern style
+
+const → block scope + value change nahi hoti
+
+3. Data Types
+String → "Hello"
+
+Number → 25
+
+Boolean → true / false
+
+Object → {name: "Rahul", age: 22}
+
+Array → ["Apple", "Banana"]
+
+Null → null (empty)
+
+Undefined → variable declared but no value
+
+javascript
+Copy
+Edit
+let city = "Meerut"; // String
+let num = 100;       // Number
+let arr = [1, 2, 3]; // Array
+4. Operators
+javascript
+Copy
+Edit
+// Arithmetic
+let sum = 5 + 3; // 8
+
+// Comparison
+console.log(5 > 3); // true
+
+// Logical
+console.log(true && false); // false
+5. Conditions
+javascript
+Copy
+Edit
+let age = 18;
+if (age >= 18) {
+  console.log("Adult");
+} else {
+  console.log("Minor");
+}
+6. Loops
+javascript
+Copy
+Edit
+// For loop
+for (let i = 1; i <= 5; i++) {
+  console.log(i);
+}
+
+// While loop
+let count = 1;
+while (count <= 3) {
+  console.log(count);
+  count++;
+}
+7. Functions
+javascript
+Copy
+Edit
+function greet(name) {
+  return `Hello, ${name}`;
+}
+console.log(greet("Rahul"));
+Arrow function:
+
+javascript
+Copy
+Edit
+const greet = (name) => `Hello, ${name}`;
+8. Objects
+javascript
+Copy
+Edit
+let person = {
+  name: "Rahul",
+  age: 22,
+  city: "Meerut",
+  greet: function() {
+    console.log("Hello");
+  }
+};
+console.log(person.name);
+person.greet();
+9. Arrays
+javascript
+Copy
+Edit
+let fruits = ["Apple", "Mango", "Banana"];
+console.log(fruits[1]); // Mango
+
+fruits.push("Orange"); // Add item
+fruits.pop();          // Remove last
+10. DOM Manipulation
+html
+Copy
+Edit
+<p id="demo">Hello</p>
+<script>
+document.getElementById("demo").innerText = "Hi Rahul!";
+</script>
+11. Events
+html
+Copy
+Edit
+<button onclick="sayHi()">Click Me</button>
+<script>
+function sayHi() {
+  alert("Hello Rahul!");
+}
+</script>
+12. ES6 Features
+javascript
+Copy
+Edit
+// Template literals
+let name = "Rahul";
+console.log(`Hello, ${name}`);
+
+// Destructuring
+let [a, b] = [1, 2];
+let {x, y} = {x: 10, y: 20};
+
+// Spread operator
+let arr1 = [1, 2];
+let arr2 = [...arr1, 3, 4];
+13. Promises
+javascript
+Copy
+Edit
+let promise = new Promise((resolve, reject) => {
+  let success = true;
+  if (success) resolve("Done");
+  else reject("Error");
+});
+
+promise.then(msg => console.log(msg))
+       .catch(err => console.log(err));
+14. Async / Await
+javascript
+Copy
+Edit
+async function getData() {
+  let response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+  let data = await response.json();
+  console.log(data);
+}
+getData();
+15. Classes
+javascript
+Copy
+Edit
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+  greet() {
+    console.log(`Hi, I'm ${this.name}`);
+  }
+}
+let p1 = new Person("Rahul");
+p1.greet();
+16. Modules
+javascript
+Copy
+Edit
+// file1.js
+export let num = 5;
+
+// file2.js
+import { num } from './file1.js';
+console.log(num);
+17. Advanced Topics
+Closures → Function ke andar dusra function jo parent variables ko access kare.
+
+Hoisting → Variable/function ka declaration top pe move hona.
+
+Event Loop → JavaScript ka async execution model.
+
+Fetch API / AJAX → Server se data lena/bhejna.
+
+LocalStorage / SessionStorage → Browser me data store karna.
+
+📜
